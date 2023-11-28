@@ -1,0 +1,145 @@
+/* main */
+
+/* Kesenian */
+.Kesenian {
+    padding: 100px 0px 30px 20px;
+    display: flex;
+    justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
+    align-items: flex-start; /* Menggeser konten ke bagian atas */
+    gap: 40px;
+}
+
+.Kesenian-text {
+    top: 0;
+    color: #706556;
+}
+
+.Kesenian-text h2 {
+    margin-bottom: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.Kesenian-text p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.Kesenian-image {
+    height: 400px;
+    width: 700px;
+    background-image: url("../public/Image/Bali\ Heritage.png");
+    background-size: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -50px 0px ;
+    border-radius: 32px 0px 0px 32px;
+}
+
+/* Kesenian1 */
+.Kesenian1 {
+  padding: 18px 0px 0px 0px;
+  display: flex;
+  justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
+  align-items: flex-start; /* Menggeser konten ke bagian atas */
+  gap: 40px;
+}
+
+.Kesenian1-text {
+  top: 0;
+  color: #706556;
+}
+
+.Kesenian1-text h2 {
+  margin-bottom: 15px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.Kesenian1-text p {
+  font-size: 18px;
+}
+
+.Kesenian1-image {
+  height: 400px;
+  width: 700px;
+  background-image: url("../public/Image/Kesenian.jpg");
+  background-size: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -50px 0px ;
+  border-radius: 0px 32px 32px 0px;
+}
+
+/* Kesenian2 */
+.Kesenian2 {
+  padding: 18px 0px 30px 20px;
+  display: flex;
+  justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
+  align-items: flex-start; /* Menggeser konten ke bagian atas */
+  gap: 40px;
+}
+
+.Kesenian2-text {
+  top: 0;
+  color: #706556;
+}
+
+.Kesenian2-text h2 {
+  margin-bottom: 15px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.Kesenian2-text p {
+  font-size: 18px;
+}
+
+.Kesenian2-image {
+  height: 400px;
+  width: 700px;
+  background-image: url("../public/Image/Kesenian.jpg");
+  background-size: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -50px 0px ;
+  border-radius: 32px 0px 0px 32px;
+}
+
+/* Kesenian3 */
+.Kesenian3 {
+  padding: 18px 0px 0px 0px;
+  display: flex;
+  justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
+  align-items: flex-start; /* Menggeser konten ke bagian atas */
+  gap: 40px;
+}
+
+.Kesenian3-text {
+  top: 0;
+  color: #706556;
+}
+
+.Kesenian3-text h2 {
+  margin-bottom: 15px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.Kesenian3-text p {
+  font-size: 18px;
+}
+
+.Kesenian3-image {
+  height: 400px;
+  width: 700px;
+  background-image: url("../public/Image/Bali\ Heritage.png");
+  background-size: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -50px 0px ;
+  border-radius: 0px 32px 0px 0px;
+}
+
+
+/* responsive */
