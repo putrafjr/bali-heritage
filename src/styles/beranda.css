@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #FBEEDC;
+}
+
+
+
+/* header */
+
+#logOut {
+    display: none;
+}
+
+header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #716B63;
+    background-color: #FBD8A8;
+    z-index: 999;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .logo-wrap {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    background-color: #FBD8A8;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    background-image: url("../public/favicon.png");
+    background-size: cover;
+    background-color: #FBD8A8;
+
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: #FBD8A8;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #716B63;
+    font-size: 16px;
+    background-color: #FBD8A8;
+
+}
+
+header nav ul li a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* main */
+main {
+    padding: 150px 80px 0px 80px;
+}
+
+/* jumbtrone */
+.jumbtrone {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.jumbtrone-text {
+    color: #716B63;
+}
+
+.jumbtrone-text h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.jumbtrone-text p {
+    font-size: 18px;
+}
+
+.jumbtrone-image {
+    height: 400px;
+    width: 700px;
+    background-image: url("../public/baliher.png");
+    background-size: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -50px 0px ;
+}
+
+/* benefit */
+.benefit {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.benefit h2, .trash h2 {
+    color: #716B63;
+    font-size: 24px;
+}
+
+.benefit hr, .trash hr {
+    border: none;
+    margin: 20px auto 40px auto;
+    height: 5px;
+    width: 100%;
+    background-color: #716B63;
+}
+
+.info-group {
+    margin: auto;
+    width: 80%;
+    color: #716B63;
+}
+
+.info-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.info-wrap .number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #716B63;
+    color: white;
+}
+
+.info-wrap p {
+    width: 90%;
+    text-align: left;
+    font-size: 18;
+}
+
+.info-wrap span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* trash*/
+.trash {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.trash-group {
+    margin: auto;
+    width: 80%;
+}
+
+.trash-wrap {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #716B63;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.trash-wrap:nth-child(2) {
+    text-align: right;
+}
+
+.trash-wrap:nth-child(1) .trash-image{
+    background-image: url("../public/baliher.png");
+    background-size: cover;
+} 
+
+.trash-wrap:nth-child(2) .trash-image{
+    background-image: url("../public/baliher.png");
+    background-size: cover;
+}
+
+.trash-wrap:nth-child(3) .trash-image{
+    background-image: url("../public/baliher.png");
+    background-size: cover;
+} 
+
+.trash-wrap .trash-image {
+    height: 120px;
+    width: 350px;
+    border-radius: 4%;    
+}
+
+.trash-wrap span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBD8A8;
+    color: #716B63;
+    font-size: 14px;
+    padding: 20px 40px;
+}
+
+
+footer .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FBD8A8;
+
+}
+
+
+footer .note{
+    margin-right: 180px;
+    background-color: #FBD8A8;
+
+}
+
+/* responsive */

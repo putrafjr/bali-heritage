@@ -1,8 +1,8 @@
 import 'regenerator-runtime';
 import '../styles/beranda.css';
 import '../styles/kesenian.css';
-import '../styles/event.css';
-import '../styles/tentangKami.css';
+// import '../styles/event.css';
+// import '../styles/tentangKami.css';
 import App from './views/app';
 
 const app = new App({
