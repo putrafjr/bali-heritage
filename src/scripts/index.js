@@ -1,6 +1,7 @@
 import 'regenerator-runtime';
 import '../styles/beranda.css';
 import '../styles/kesenian.css';
+import '../styles/Form.css';
 // import '../styles/event.css';
 // import '../styles/tentangKami.css';
 import App from './views/app';

@@ -1,0 +1,73 @@
+/* form pendaftaran*/
+
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 100px  500px 100px 500px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], select {
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.checkbox {
+    margin: 0 190px 20px 0;
+    float: left;
+}
+
+.checkbox input[type="checkbox"]{
+    margin: 5px;
+}
+
+.Pendaftaran-Button1 {
+    border-radius: 500px;
+    border: 3px #5D5A88 solid;
+    background: #FBD8A8;
+    color: #000000;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.Pendaftaran-Button2 {
+    border-radius: 47.273px;
+    border: 3px solid #5D5A88;
+    background: #FBD8A8;
+    color: #000000;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 28px;
+    text-decoration: none;
+    margin-left: 250px;
+}
+
