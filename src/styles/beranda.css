@@ -9,7 +9,6 @@
 }
 
 /* header */
-
 #logOut {
     display: none;
 }
@@ -72,9 +71,61 @@ header nav ul li a:focus {
 
 /* main */
 
+/* Jumbutron */
+.jumbutron {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0px 0px 0px;
+}
+
+.jumbutron-content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    height: 520px;
+    background: url("../public/Image/Jumbutron\ Bali.jpg");
+    background-size: cover;
+}
+
+.text-content {
+    flex: 1;
+    text-align: right;
+    color: #614D32;
+    background-color: #fbeedc00;
+    padding-right: 20px;
+}
+
+.text-content h3 {
+    font-size: 119px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: italic;
+    background-color:  #fbeedc00;
+}
+
+.jumbutron-button {
+    background-color: #fbeedc00;
+}
+
+.Posterhome-Button3 {
+    border-radius: 500px;
+    border: 3px #1d1b18 solid;
+    background-color: #fbeedc00;
+    color: #614D32;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 17px;
+    text-decoration: none;
+}
+
+.Posterhome-Button3:hover {
+    color: #000;
+}
+
 /* Posterhome */
 .Posterhome {
-    padding: 100px 30px 30px 30px;
+    padding: 45px 30px 54px 30px;
     display: flex;
     justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
     align-items: flex-start; /* Menggeser konten ke bagian atas */
@@ -109,9 +160,11 @@ header nav ul li a:focus {
 .Posterhome-Button1 {
     border-radius: 500px;
     border: 3px #5D5A88 solid;
+    background: #fbd8a800;
     color: #000000;
     display: inline-flex;
     font-size: 20px;
+    font-weight: bolder;
     padding: 20px;
     text-decoration: none;
 }
@@ -133,7 +186,7 @@ header nav ul li a:focus {
 /* contenthome */
 .contenthome {
     text-align: center;
-    padding: 32px
+    padding: 60px 30px 40px 30px;
 }
 
 .contenthome-group {
@@ -190,13 +243,13 @@ header nav ul li a:focus {
 .video-container {
   text-align: center;
   padding: 30px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 20px;
   color: #706556;
 }
 
 .video-style {
-  width: 78%;
+  width: 62%;
   border-radius: 90px;
   border: 3px solid #000;
 }
@@ -235,7 +288,6 @@ footer .note{
 @media (max-width: 768px) {
     
     /* Posterhome */
-
     .Posterhome {
         padding: 100px 30px 30px 30px;
         display: flex;

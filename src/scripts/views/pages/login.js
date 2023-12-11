@@ -18,7 +18,7 @@ const Login = {
             <input type="password" class="form-control" id="lname" name="password" placeholder="Password">
           </div></br>
           <div class="button_box">
-            <button type="submit" name="loginsubmit" class="btn">LOGIN</button>
+            <button type="submit" name="loginsubmit" class="btn"><a href=".#/admin">LOGIN</a></button>
           </div>
         </form>
       </div>

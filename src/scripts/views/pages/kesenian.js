@@ -4,39 +4,50 @@ const Kesenian = {
       main.classList.remove('reset-padding');
   
       return `
-        <div class="Kesenian">
-            <div class="Kesenian-text"></br></br>
-                <h2>Bali Heritage</h2>
-                <p>Selamat datang di Bali Heritage, sebuah platform untuk memahami lebih dalam tentang kekayaan budaya Bali. </p> 
-                <p>Keindahan budaya Bali yang merangsang minat dalam menjaga dan melestarikan warisan budaya. </p> 
+        <div class="kesenian">
+            <div class="kesenianright-side"></br>
+                <h1>Tari Kecak</h1>
+                <p>Tari Kecak adalah sebuah tarian tradisional Bali yang unik karena tidak menggunakan musik instrumen, melainkan mengandalkan suara paduan suara laki-laki yang berulang-ulang mengucapkan kata "cak" dalam pola yang teratur. Tarian ini biasanya menggambarkan cerita epik dari Ramayana, sebuah wiracarita Hindu kuno, di mana para penari membentuk lingkaran besar sambil duduk dan menggerakkan tangan mereka. 
+                </p>
             </div>
-            <div class="Kesenian-image"></div>
-        </div>
-
-        <div class="Kesenian1">
-            <div class="Kesenian1-image"></div>
-            <div class="Kesenian1-text"></br></br>
-                <h2>Bali Heritage</h2>
-                <p>Selamat datang di Bali Heritage, sebuah platform untuk memahami lebih dalam tentang kekayaan budaya Bali. </p> 
-                <p>Keindahan budaya Bali yang merangsang minat dalam menjaga dan melestarikan warisan budaya. </p> 
+            <div class="kesenianleft-side">
+                <img src="./tarikecak.png" alt="">
             </div>
         </div>
 
-        <div class="Kesenian2">
-            <div class="Kesenian2-text"></br></br>
-                <h2>Bali Heritage</h2>
-                <p>Selamat datang di Bali Heritage, sebuah platform untuk memahami lebih dalam tentang kekayaan budaya Bali. </p> 
-                <p>Keindahan budaya Bali yang merangsang minat dalam menjaga dan melestarikan warisan budaya. </p> 
+        </br></br>
+        <div class="kesenian1">
+            <div class="kesenian1left-side">
+                <img src="./ngaben.jpg" alt="">
             </div>
-            <div class="Kesenian2-image"></div>
+            <div class="kesenian1right-side"></br></br>
+                <h1>Ngaben</h1>
+                <p>Ngaben adalah upacara kematian yang penting dalam budaya Bali yang dilakukan untuk memuliakan roh orang yang meninggal. Upacara ini melibatkan serangkaian ritual yang kompleks, dimulai dengan penguburan sementara, dilanjutkan dengan pengumpulan tulang-belulang setelah jangka waktu tertentu, dan kemudian diakhiri dengan prosesi kremasi.
+                </p>
+            </div>
+        </div>
+        
+        </br></br>
+        <div class="kesenian2">
+            <div class="kesenian2right-side"></br></br>
+                <h1>Ogoh-ogoh</h1>
+                <p>Ogoh-ogoh adalah patung raksasa yang diproduksi secara tradisional oleh masyarakat Bali setiap tahunnya menjelang perayaan Nyepi, atau Tahun Baru Saka, dalam budaya Hindu Bali. Patung-patung ini merupakan simbol dari kejahatan atau roh jahat yang dibuat dengan detail yang menakjubkan. Masyarakat, terutama pemuda, bekerja sama untuk membuat ogoh-ogoh dengan menggunakan bahan-bahan seperti bambu, kayu, dan kertas. 
+                </p>
+            </div>
+            <div class="kesenian2left-side">
+                <img src="./ogohogoh.jpg" alt="">
+            </div>
         </div>
 
-        <div class="Kesenian3">
-            <div class="Kesenian3-image"></div>
-            <div class="Kesenian3-text"></br></br>
-                <h2>Bali Heritage</h2>
-                <p>Selamat datang di Bali Heritage, sebuah platform untuk memahami lebih dalam tentang kekayaan budaya Bali. </p> 
-                <p>Keindahan budaya Bali yang merangsang minat dalam menjaga dan melestarikan warisan budaya. </p> 
+        </br></br>
+        <div class="kesenian3">
+            <div class="kesenian3left-side">
+                <img src="./omedomedan.png" alt="">
+            </div>
+            <div class="kesenian3right-side"></br></br>
+                <h1>Omed-omedan</h1>
+                <p>Omed-omedan adalah sebuah tradisi unik dalam budaya Bali yang berlangsung setiap tahun di desa Banjar Kaja, Denpasar, tepatnya pada hari perayaan Nyepi, setelah melalui rangkaian ritual perayaan Saka Tahun Baru. Tradisi ini melibatkan para pemuda dan pemudi yang belum menikah yang berkumpul di jalan utama desa untuk melakukan tarian dan permainan yang melibatkan ciuman di tengah-tengah kerumunan.
+                </p>
             </div>
         </div>
         `;

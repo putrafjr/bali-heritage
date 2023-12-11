@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import '@fortawesome/fontawesome-free/css/all.css';
-
 /* main */
 /* Login Page */
 .Login-page {
@@ -93,6 +90,11 @@
     background-color: #e61010;
     padding: 9px 15px;
     margin-top: -7px;
+  }
+
+  .btn > a {
+    color: #ebe5e5;
+    background-color: #e61010;
   }
   
   .btn:focus {
