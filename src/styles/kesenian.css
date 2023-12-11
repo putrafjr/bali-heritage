@@ -1,145 +1,164 @@
 /* main */
-
-/* Kesenian */
-.Kesenian {
-    padding: 100px 0px 30px 20px;
-    display: flex;
-    justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
-    align-items: flex-start; /* Menggeser konten ke bagian atas */
-    gap: 40px;
+/* kesenian */
+.kesenian{
+  padding: 80px 0px 40px 0px;
+  margin: 0;
+  display: inline-flex;
 }
 
-.Kesenian-text {
-    top: 0;
-    color: #706556;
+.kesenianright-side{
+  flex-basis: 54%;
 }
 
-.Kesenian-text h2 {
-    margin-bottom: 15px;
-    font-size: 50px;
-    text-align: center;
+.kesenianleft-side{
+  flex-basis: 46%;
 }
 
-.Kesenian-text p {
-    font-size: 18px;
-    text-align: justify;
+.kesenianleft-side img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 0px 0px 50px ;
+  transition: transform 0.4s ease-in-out;
 }
 
-.Kesenian-image {
-    height: 400px;
-    width: 700px;
-    background-image: url("../public/tarikecak.png");
-    background-size: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 0px ;
-    border-radius: 32px 0px 0px 32px;
+.kesenianleft-side img:hover {
+  transform: scale(1.1);
 }
 
-/* Kesenian1 */
-.Kesenian1 {
-  padding: 18px 0px 0px 0px;
-  display: flex;
-  justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
-  align-items: flex-start; /* Menggeser konten ke bagian atas */
-  gap: 40px;
-}
-
-.Kesenian1-text {
-  top: 0;
-  color: #706556;
-}
-
-.Kesenian1-text h2 {
-  margin-bottom: 15px;
-  font-size: 50px;
+.kesenianright-side h1{
+  font-weight: bold;
   text-align: center;
+  color: #887557;
+  font-size: 44px;
+  margin-top: 70px;
 }
 
-.Kesenian1-text p {
-  font-size: 18px;
+.kesenianright-side p {
+  padding: 20px 34px 0px 38px;
+  font-size: 20px;
+  text-align: justify;
+  color: #887557;
 }
 
-.Kesenian1-image {
-  height: 400px;
-  width: 700px;
-  background-image: url("../public/ngaben.jpg");
-  background-size: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 0px ;
-  border-radius: 0px 32px 32px 0px;
+/* Kesenian edit */
+/* Kesenian edit 1 */
+.kesenian1{
+  padding: 38px 0px 20px 0px;
+  margin: 0;
+  display: inline-flex;
 }
 
-/* Kesenian2 */
-.Kesenian2 {
-  padding: 18px 0px 30px 20px;
-  display: flex;
-  justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
-  align-items: flex-start; /* Menggeser konten ke bagian atas */
-  gap: 40px;
+.kesenian1right-side{
+  flex-basis: 54%;
 }
 
-.Kesenian2-text {
-  top: 0;
-  color: #706556;
+.kesenian1left-side{
+  flex-basis: 46%;
 }
 
-.Kesenian2-text h2 {
-  margin-bottom: 15px;
-  font-size: 50px;
+.kesenian1left-side img {
+  height: 130%;
+  width: 100%;
+  border-radius: 0px 50px 50px 0px ;
+  transition: transform 0.4s ease-in-out;
+}
+
+.kesenian1left-side img:hover {
+  transform: scale(1.1);
+}
+
+.kesenian1right-side h1{
+  font-weight: bold;
   text-align: center;
+  color: #887557;
+  font-size: 44px;
+  margin-top: 40px;
 }
 
-.Kesenian2-text p {
-  font-size: 18px;
+.kesenian1right-side p {
+  padding: 20px 34px 0px 38px;
+  font-size: 20px;
+  text-align: justify;
+  color: #887557;
 }
 
-.Kesenian2-image {
-  height: 400px;
-  width: 700px;
-  background-image: url("../public/ogohogoh.jpg");
-  background-size: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 0px ;
-  border-radius: 32px 0px 0px 32px;
+/* Kesenian edit 2 */
+.kesenian2{
+  padding: 38px 0px 20px 0px;
+  margin: 0;
+  display: inline-flex;
 }
 
-/* Kesenian3 */
-.Kesenian3 {
-  padding: 18px 0px 0px 0px;
-  display: flex;
-  justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
-  align-items: flex-start; /* Menggeser konten ke bagian atas */
-  gap: 40px;
+.kesenian2right-side{
+  flex-basis: 54%;
 }
 
-.Kesenian3-text {
-  top: 0;
-  color: #706556;
+.kesenian2left-side{
+  flex-basis: 46%;
 }
 
-.Kesenian3-text h2 {
-  margin-bottom: 15px;
-  font-size: 50px;
+.kesenian2left-side img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px 0px 0px 50px ;
+  transition: transform 0.4s ease-in-out;
+}
+
+.kesenian2left-side img:hover {
+  transform: scale(1.1);
+}
+
+.kesenian2right-side h1{
+  font-weight: bold;
   text-align: center;
+  color: #887557;
+  font-size: 44px;
+  margin-top: 40px;
 }
 
-.Kesenian3-text p {
-  font-size: 18px;
+.kesenian2right-side p {
+  padding: 20px 34px 0px 38px;
+  font-size: 20px;
+  text-align: justify;
+  color: #887557;
 }
 
-.Kesenian3-image {
-  height: 400px;
-  width: 700px;
-  background-image: url("../public/omedomedan.png");
-  background-size: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 0px ;
-  border-radius: 0px 32px 32px 0px;
+/* Kesenian edit 3 */
+.kesenian3{
+  padding: 38px 0px 0px 0px;
+  margin: 0;
+  display: inline-flex;
 }
 
+.kesenian3right-side{
+  flex-basis: 54%;
+}
+
+.kesenian3left-side{
+  flex-basis: 46%;
+}
+
+.kesenian3left-side img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 50px 0px 0px ;
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.kesenian3right-side h1{
+  font-weight: bold;
+  text-align: center;
+  color: #887557;
+  font-size: 44px;
+  margin-top: 40px;
+}
+
+.kesenian3right-side p {
+  padding: 20px 34px 0px 38px;
+  font-size: 20px;
+  text-align: justify;
+  color: #887557;
+}
 
 /* responsive */

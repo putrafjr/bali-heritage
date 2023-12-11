@@ -1,0 +1,106 @@
+/* main */
+/* Login Page */
+.Login-page {
+    padding: 140px 140px 60px 140px;
+    display: flex;
+    justify-content: center; 
+}
+
+.horizontal-form {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #fff;
+    width: 500px;
+    border: 5px solid #000;
+    border-radius: 50px 50px 50px 50px;
+    min-height: 250px;
+  }
+  
+  .heading {
+    padding: 120px 15px;
+    background : url("../public/Image/Login\ bali.jpg");
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+  }
+  
+  .form-body {
+    padding: 25px 25px 30px;
+    height: 44%;
+    background-color: #F2F1FA;
+    border-radius: 0px 0px 50px 50px;
+  }
+  
+  .form-body > form {
+    background-color: #F2F1FA;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: grid;
+    text-align: left;
+    background-color: #F2F1FA;
+  }
+  
+  .form-group > label {
+    background-color: #F2F1FA;
+  }
+  
+  .form-control {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    letter-spacing: 1px;
+    height: 40px;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 0 0 5px -3px #333;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+  }
+  
+  .form-control:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+    border: 1px solid #00b4ef;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  
+  .button_box {
+    background-color: #F2F1FA;
+  }
+  
+  .btn {
+    float: center;
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #e61010;
+    padding: 9px 15px;
+    margin-top: -7px;
+  }
+
+  .btn > a {
+    color: #ebe5e5;
+    background-color: #e61010;
+  }
+  
+  .btn:focus {
+    outline: 1px auto #000;
+    border-radius: 5px;
+  }
+
+
+  /* responsive */

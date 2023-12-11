@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #FBEEDC;
+}
+
+/* header */
+#logOut {
+    display: none;
+}
+
+header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #716B63;
+    background-color: #FBD8A8;
+    z-index: 999;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .logo-wrap {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    background-color: #FBD8A8;
+}
+
+header .logo-wrap h1 {
+    background-color: #FBD8A8;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    background-image: url("../public/favicon.png");
+    background-size: cover;
+    background-color: #FBD8A8;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: #FBD8A8;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #716B63;
+    font-size: 16px;
+    background-color: #FBD8A8;
+}
+
+header nav ul li a:focus {
+    color:#121110;
+    font-weight: bold;
+}
+
+/* main */
+
+/* Jumbutron */
+.jumbutron {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0px 0px 0px;
+}
+
+.jumbutron-content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    height: 637px;
+    background: url("../public/Image/Jumbutron\ Bali.jpg");
+    background-size: cover;
+}
+
+.text-content {
+    flex: 1;
+    text-align: right;
+    color: #614D32;
+    background-color: #fbeedc00;
+    padding-right: 20px;
+}
+
+.text-content h3 {
+    font-size: 119px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: italic;
+    background-color:  #fbeedc00;
+}
+
+.jumbutron-button {
+    background-color: #fbeedc00;
+}
+
+.Posterhome-Button3 {
+    border-radius: 500px;
+    border: 3px #1d1b18 solid;
+    background-color: #fbeedc00;
+    color: #614D32;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 17px;
+    text-decoration: none;
+}
+
+.Posterhome-Button3:hover {
+    color: #000;
+}
+
+/* Posterhome */
+.Posterhome {
+    padding: 45px 30px 54px 30px;
+    display: flex;
+    justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
+    align-items: flex-start; /* Menggeser konten ke bagian atas */
+    gap: 40px;
+}
+
+.Posterhome-text {
+    top: 0;
+    color: #706556;
+}
+
+.Posterhome-text h2 {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.Posterhome-text p {
+    font-size: 18px;
+}
+
+.Posterhome-image {
+    height: 400px;
+    width: 700px;
+    background-image: url("../public/Image/Bali\ Heritage.png");
+    background-size: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -50px 0px ;
+    border-radius: 25px;
+}
+
+.Posterhome-Button1 {
+    border-radius: 500px;
+    border: 3px #5D5A88 solid;
+    background: #fbd8a800;
+    color: #000000;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.Posterhome-Button2 {
+    border-radius: 47.273px;
+    border: 3px solid #5D5A88;
+    background: #FBD8A8;
+    color: #000000;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 28px;
+    text-decoration: none;
+}
+/*-----------------------------------------------------*/
+
+/* contenthome */
+.contenthome {
+    text-align: center;
+    padding: 60px 0px 40px 260px;
+}
+
+.contenthome-group {
+    margin: auto;
+    width: 100%;
+}
+
+.contenthome-wrap {
+    gap: 20px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contenthome-wrap p {
+    color: #706556;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contenthome-wrap:nth-child(2) p {
+    text-align: right;
+}
+
+.contenthome-wrap:nth-child(1) .contenthome-image{
+    background-image: url("../public/Image/Kesenian.jpg");
+    background-size: cover;
+} 
+
+.contenthome-wrap:nth-child(2) .contenthome-image{
+    background-image: url("../public/Image/Tradisi\ Bali.jpg");
+    background-size: cover;
+}
+
+.contenthome-wrap:nth-child(3) .contenthome-image{
+    background-image: url("../public/Image/Bali\ Heritage.png");
+    background-size: cover;
+} 
+
+.contenthome-wrap .contenthome-image {
+    height: 200px;
+    width: 350px;
+    border-radius: 25px;   
+    background-size: 50%;
+}
+
+.contenthome-wrap span {
+    top: 0;
+    font-weight: bold;
+    font-size:30px;
+}
+/*-----------------------------------------------------*/
+
+/* Video */
+.video-container {
+  text-align: center;
+  padding: 30px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #706556;
+}
+
+.video-style {
+  width: 62%;
+  border-radius: 90px;
+  border: 3px solid #000;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBD8A8;
+    color: #716B63;
+    font-size: 14px;
+    padding: 20px 40px;
+}
+
+
+footer .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #FBD8A8;
+
+}
+
+
+footer .note{
+    margin-right: 180px;
+    background-color: #FBD8A8;
+
+}
+
+/* responsive */
+/* responsive Main */
+
+@media (max-width: 768px) {
+    
+    /* Posterhome */
+    .Posterhome {
+        padding: 100px 30px 30px 30px;
+        display: flex;
+        justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
+        align-items: flex-start; /* Menggeser konten ke bagian atas */
+        gap: 40px;
+    }
+    
+    .Posterhome-text h2 {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    
+    .Posterhome-text p {
+        font-size: 16px;
+    }
+    
+    .Posterhome-image {
+        width: 100%;
+        height: 400px;
+        background-image: url("../public/Image/Bali\ Heritage\ resize2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px center ;
+    }
+
+    /* contenthome */
+    
+    .contenthome-group {
+        width: 90%;
+    }
+
+    .contenthome-wrap {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .contenthome-wrap .contenthome-image {
+        height: 250px;
+        width: 400px;
+        background-size: cover;
+        border-radius: 4%;    
+    }
+
+    .contenthome-wrap:nth-child(3) .contenthome-image{
+      background-image: url("../public/Image/Bali\ Heritage\ resize2.png");
+      background-size: cover;
+    }
+
+    .contenthome-wrap span {
+      font-size: 24px;
+    }
+
+    /* Video */
+    .video-style {
+      width: 90%;
+    }
+    }
+
+    @media (max-width: 570px) {
+
+    /* Posterhome */
+
+    .Posterhome {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .Posterhome-text h2 {
+        margin-bottom: 7px;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .Posterhome-text p {
+        font-size: 16px;
+    }
+
+    .Posterhome-image {
+        height: 280px;
+        width: 100%;
+    }
+
+    .Posterhome-Button {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    /* contenthome */
+
+    .contenthome-group {
+        width: 100%;
+    }
+
+    .contenthome-wrap {
+        gap: 10px;
+        flex-direction: column;
+        font-size: 14px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .contenthome-wrap:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenthome-wrap .trash-image {
+        width: 350px;
+    }
+
+    .contenthome-wrap p {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .contenthome-wrap:nth-child(2) p {
+      text-align: center;
+    }
+
+    /* Video */
+  .video-container {
+    font-size: 17px;
+    color: #706556;
+  }
+
+  .video-style {
+    width: 90%;
+  }
+  }

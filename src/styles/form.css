@@ -1,0 +1,115 @@
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+h1.form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.daftar {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px 100px 300px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], select {
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.checkbox {
+    margin: 0 190px 20px 0;
+    float: left;
+}
+
+.checkbox input[type="checkbox"]{
+    margin: 5px;
+}
+
+.Pendaftaran-Button1 {
+    border-radius: 500px;
+    border: 3px #5D5A88 solid;
+    background: #FBD8A8;
+    color: #000000;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px;
+    justify-content: center;
+    width: 65px;
+    text-decoration: none;
+}
+
+.Pendaftaran-Button2 {
+    border-radius: 500px;
+    border: 3px solid #5D5A88;
+    background: #FBD8A8;
+    color: #000000;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px;
+    justify-content: center;
+    width: 95px;
+    margin: auto auto;
+    text-decoration: none;
+    margin-left: 410px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal-content {
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    max-width: 28%; /* Adjust the maximum width as needed */
+    width: 100%;   /* Add this line to make sure it takes full width on smaller screens */
+    text-align: center;
+}
+
+.modal-content > p {
+    margin: 4% auto;
+    text-align: justify;
+}
+
+.Posterhome-Button .btn1 {
+    margin: 20px 0px 12px 0px;
+    padding: 8px 60px 8px 60px;
+    background-color: #A8FBC9;
+    border-radius: 25px;
+    border: 2px solid #000;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.Posterhome-Button .btn2 {
+    border: 2px solid #00000000;
+    font-size: 18px;
+}
+  
+  /* Add additional styles as needed */
+  
