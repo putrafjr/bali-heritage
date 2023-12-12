@@ -9,12 +9,16 @@
 }
 
 /* header */
+.hide-content{
+    display: none;
+}
+
 #logOut {
     display: none;
 }
 
 header {
-    position: fixed;
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     padding: 10px 35px;
@@ -24,10 +28,15 @@ header {
     color: #716B63;
     background-color: #FBD8A8;
     z-index: 999;
+    border-bottom: 3px solid #0d0d0e;
 }
 
 .hamburger {
     display: none;
+}
+
+.hamburger > button {
+    background-color: #FBD8A8;
 }
 
 header .logo-wrap {
@@ -70,19 +79,18 @@ header nav ul li a:focus {
 }
 
 /* main */
-
 /* Jumbutron */
 .jumbutron {
     position: relative;
     overflow: hidden;
-    padding: 70px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .jumbutron-content {
     display: flex;
     align-items: top;
     justify-content: space-between;
-    height: 520px;
+    height: 680px;
     background: url("../public/Image/Jumbutron\ Bali.jpg");
     background-size: cover;
 }
@@ -121,15 +129,15 @@ header nav ul li a:focus {
 
 .Posterhome-Button3:hover {
     color: #000;
-}
+} 
 
 /* Posterhome */
 .Posterhome {
-    padding: 45px 30px 54px 30px;
+    padding: 60px 30px 60px 30px;
     display: flex;
     justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
     align-items: flex-start; /* Menggeser konten ke bagian atas */
-    gap: 40px;
+    gap: 20px;
 }
 
 .Posterhome-text {
@@ -186,7 +194,7 @@ header nav ul li a:focus {
 /* contenthome */
 .contenthome {
     text-align: center;
-    padding: 60px 30px 40px 30px;
+    padding: 60px 30px 40px 70px;
 }
 
 .contenthome-group {
@@ -237,6 +245,7 @@ header nav ul li a:focus {
     font-weight: bold;
     font-size:30px;
 }
+
 /*-----------------------------------------------------*/
 
 /* Video */
@@ -257,13 +266,16 @@ header nav ul li a:focus {
 /* footer */
 
 footer {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #FBD8A8;
     color: #716B63;
     font-size: 14px;
-    padding: 20px 40px;
+    padding: 20px 0px;
+    z-index: 999;
 }
 
 
@@ -275,25 +287,56 @@ footer .logo-wrap {
 
 }
 
-
 footer .note{
-    margin-right: 180px;
     background-color: #FBD8A8;
-
 }
 
 /* responsive */
-/* responsive Main */
+/* responsive Tablet */
+@media (max-width: 900px) {
 
-@media (max-width: 768px) {
-    
+    /* Jumbutron */
+    .jumbutron-content {
+        align-items: center;
+        height: 1070px;
+        background-size: cover;
+    }
+
+    .text-content {
+        text-align: center;
+        color: #c5c5c5;
+        background-color: #fbeedc00;
+        padding-right: 0px;
+    }
+
+    .text-content h3 {
+        font-size: 119px;
+        margin-bottom: 20px;
+    }
+
+    .jumbutron-button {
+        background-color: #fbeedc00;
+    }
+
+    .Posterhome-Button3 {
+        border-radius: 500px;
+        border: 3px #d6d6d6 solid;
+        background-color: #fbeedc00;
+        color: #a8a6a3;
+        display: inline-flex;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 17px;
+        text-decoration: none;
+    }
+
     /* Posterhome */
     .Posterhome {
-        padding: 100px 30px 30px 30px;
+        padding: 60px 22px 60px 22px;
         display: flex;
         justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
         align-items: flex-start; /* Menggeser konten ke bagian atas */
-        gap: 40px;
+        gap: 27px;
     }
     
     .Posterhome-text h2 {
@@ -307,7 +350,7 @@ footer .note{
     
     .Posterhome-image {
         width: 100%;
-        height: 400px;
+        height: 340px;
         background-image: url("../public/Image/Bali\ Heritage\ resize2.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -315,9 +358,12 @@ footer .note{
     }
 
     /* contenthome */
-    
+    .contenthome {
+        padding: 60px 8px 43px 8px;
+    }
+
     .contenthome-group {
-        width: 90%;
+        width: 95%;
     }
 
     .contenthome-wrap {
@@ -345,15 +391,114 @@ footer .note{
     .video-style {
       width: 90%;
     }
+}
+
+@media (max-width: 430px) {
+    
+    /* header */
+    header {
+        padding: 20px 20px 20px 20px;
+        flex-direction: row; 
     }
 
-    @media (max-width: 570px) {
+    header :nth-child(2){
+        margin: auto;
+    }
 
+    .hamburger {
+        display: inline-block;
+    }
+
+    header .hamburger button {
+        border: none;
+        font-size: 24px;
+        font-weight: bold; 
+        color:#000;
+    }
+
+    header .hamburger button:hover {
+        color :#a8a6a3;
+    }
+
+    header .logo-wrap {
+        gap: 5px;
+    }
+
+    header .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        transition: 0.5s;
+        width: 150px;
+        position: absolute;
+        top: 74px;
+        left: -160px;
+    }
+
+    .open {
+        left: 0px;
+    }
+
+    header nav ul {
+        width: 100%;
+        gap: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a{
+        padding: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    header nav ul li a:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    /* Jumbutron */
+    .jumbutron-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 720px;
+        background-size: cover;
+    }
+
+    .text-content {
+        text-align: center;
+        color: #a4a1a1;
+        background-color: #fbeedc00;
+        padding-right: 0px;
+    }
+
+    .text-content h3 {
+        font-size: 82px;
+        margin-bottom: 20px;
+    }
+
+    .jumbutron-button {
+        display: none;
+        background-color: #fbeedc00;
+    }
+    
     /* Posterhome */
-
     .Posterhome {
         display: flex;
         flex-direction:column;
+        padding: 60px 22px 30px 22px;
     }
 
     .Posterhome-text h2 {
@@ -379,9 +524,12 @@ footer .note{
     }
 
     /* contenthome */
+    .contenthome {
+        padding: 15px 10px 15px 10px;
+    }
 
     .contenthome-group {
-        width: 100%;
+        width: 90%;
     }
 
     .contenthome-wrap {
@@ -397,10 +545,6 @@ footer .note{
         flex-direction: column-reverse;
     }
 
-    .contenthome-wrap .trash-image {
-        width: 350px;
-    }
-
     .contenthome-wrap p {
       font-size: 16px;
       text-align: center;
@@ -410,13 +554,30 @@ footer .note{
       text-align: center;
     }
 
-    /* Video */
-  .video-container {
-    font-size: 17px;
-    color: #706556;
-  }
+    .contenthome-wrap .contenthome-image {
+        height: 240px;
+        width: 280px;
+        background-size: cover;
+        border-radius: 4%;    
+        margin-top: 40px;
+    }
 
-  .video-style {
-    width: 90%;
-  }
-  }
+    /* Video */
+    .video-container {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 15px;
+        padding: 10px;
+        color: #706556;
+    }
+
+    .video-style {
+        width: 90%;
+        border-radius: 40px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+    }
+}

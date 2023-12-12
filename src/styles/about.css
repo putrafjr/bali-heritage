@@ -1,9 +1,8 @@
 /* about */
-
 .about{
     justify-content: center;
     align-items: center;
-    padding: 100px 0px 18px 37px;
+    padding: 30px 0px 18px 37px;
     margin: 0;
     display: inline-flex;
 }
@@ -15,8 +14,7 @@
 .left-side img {
     height: 100%;
     width: 100%;
-    border-radius: 50px 50px 50px 50px ;
-
+    border-radius: 50px;
 }
 
 .right-side{
@@ -74,12 +72,14 @@
 }
 
 .image {
-    color: #1F6E8C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 260px;
     height: 240px;
     border-radius: 50%;
     background-size: cover;
-}
+  }
 
 .teams:nth-child(1) .image {
     background-image: url("../public/team/dikri.jpg");
@@ -147,3 +147,167 @@
     background-color: #c28b32;
 }
 
+/* Responsive */
+/* responsive Tablet */
+@media (max-width: 900px) {
+    .about{
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 50px 20px;
+        margin: 0;
+        display: inline-flex;
+    }
+    
+    .left-side{
+        flex-basis: 35%;
+    }
+    
+    .left-side img {
+        height: 450px;
+        width: 300px;
+        border-radius: 10%;
+    }
+    
+    .right-side{
+        flex-basis: 65%;
+    }
+    
+    .right-side h1{
+        font-weight: bold;
+        text-align: center;
+        color: #887557;
+        font-size: 38px;
+    }
+    
+    .right-side p {
+        padding: 20px 34px 0px 38px;
+        font-size: 23px;
+        text-align: justify;
+        color: #887557;
+    }
+    
+    /* team */
+    .card{
+        text-align: center;
+    }
+    
+    .header{
+        color: black;
+        font-size: 20px;
+        margin: auto;
+        line-height: 50px;
+    }
+    
+    .header h1{
+        color: #887557;
+    }
+    
+    .sub-header{
+        max-width: 100%;
+        padding: 0px 0px 50px 0px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .teams {
+        padding: 10px;
+        max-width: 32%;
+        max-height: 50%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+    }
+    
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 240px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .nama {
+        color: #1F6E8C;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    
+    .task{
+        font-style: italic;
+        color: #1F6E8C;
+    }
+    
+    .sosial-media{
+        margin: 14px;
+    }
+    
+    .sosial-media a{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        transition: .4s;
+        background-size: cover;
+        border-radius: 10px;
+    }
+}
+
+/* Responsive Handphone */
+@media (max-width: 430px) {
+    
+    .about {
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .left-side, .right-side {
+      flex-basis: 100%;
+    }
+  
+    .left-side img {
+      display:block;
+      width: 100%;
+      height: 270px;
+      margin-bottom: 40px;
+    }
+  
+    .right-side h1 {
+      font-size: 28px;
+    }
+  
+    .right-side p {
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+    .sub-header {
+      padding: 0px;
+    }
+  
+    .teams {
+      max-width: 100%;
+      padding: 10px;
+      flex-basis: 50%;
+      margin-bottom: 20px;
+    }
+  
+    .image {
+      width: 280px;
+      height: 280px;
+    }
+  
+    .nama, .task {
+      font-size: 18px;
+      padding: 6px;
+    }
+  
+    .sosial-media a {
+      height: 27px;
+      width: 27px;
+    }
+}

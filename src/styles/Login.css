@@ -1,7 +1,7 @@
 /* main */
 /* Login Page */
 .Login-page {
-    padding: 140px 140px 60px 140px;
+    padding: 40px 0px 60px 0px;
     display: flex;
     justify-content: center; 
 }
@@ -13,7 +13,7 @@
     width: 500px;
     border: 5px solid #000;
     border-radius: 50px 50px 50px 50px;
-    min-height: 250px;
+    min-height: 260px;
   }
   
   .heading {
@@ -28,7 +28,7 @@
   
   .form-body {
     padding: 25px 25px 30px;
-    height: 44%;
+    height: 46%;
     background-color: #F2F1FA;
     border-radius: 0px 0px 50px 50px;
   }
@@ -82,7 +82,7 @@
     background-color: #F2F1FA;
   }
   
-  .btn {
+  .btnlogin {
     float: center;
     border: 1px solid;
     color: rgb(255, 255, 255);
@@ -92,15 +92,62 @@
     margin-top: -7px;
   }
 
-  .btn > a {
+  .btnlogin > a {
     color: #ebe5e5;
     background-color: #e61010;
   }
   
-  .btn:focus {
+  .btnlogin:focus {
     outline: 1px auto #000;
     border-radius: 5px;
   }
 
+/* responsive */
+/* responsive Tablet */
+@media (max-width: 900px) {
+  .Login-page {
+    padding: 90px 0px 60px 0px;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 270px;
+  }
+}
 
-  /* responsive */
+/* responsive Handphone */
+@media (max-width: 430px) {
+  .Login-page {
+    padding: 55px 0px 60px 0px;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 96px;
+  }
+  
+  .horizontal-form {
+    width: 90%; 
+    border-radius: 20px; 
+  }
+
+  .heading {
+    padding: 80px 15px; 
+    font-size: 20px; 
+    border-radius: 20px 20px 0 0; 
+    background-size: cover;
+  }
+
+  .form-body {
+    padding: 15px; 
+    border-radius: 0 0 20px 20px; 
+    height: 56%;
+  }
+
+  .form-control {
+    font-size: 14px; 
+    height: 35px; 
+    padding: 5px 10px; 
+  }
+
+  .btn {
+    padding: 7px 12px; 
+    margin-top: 10px; 
+  }
+}

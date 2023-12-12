@@ -3,7 +3,7 @@ const formpendaftran = {
     const main = document.querySelector('main');
     main.classList.remove('reset-padding');
 
-    return `<div class="daftar1">
+    return `<div class="daftar">
       <form class="daftar" onsubmit="showConfirmationModal(event)">
         <h1 class="form">Form Pendaftaran Event</h1>
         <label for="nama">Nama Lengkap:</label>
@@ -28,7 +28,7 @@ const formpendaftran = {
           <label for="kesediaan">Saya bersedia hadir dalam event</label>
         </div>
         
-        <div class="Posterhome-Button">
+        <div class="Pendaftaran-Button">
           <a href=".#/event" class="Pendaftaran-Button1"> Back</a>
           <button type="submit" class="Pendaftaran-Button2"> Daftar</button>
         </div>   
@@ -54,14 +54,14 @@ const formpendaftran = {
   },
 
   async afterRender() {
-    // munculkan hamburger
+
     // hide hamburger
     const hamburger = document.querySelector('.hamburger');
-    hamburger.classList.remove('hide-content');
+    hamburger.classList.add('hide-content');
 
-    // munculkan nav
+    // hide nav
     const navigasi = document.querySelector('nav');
-    navigasi.classList.remove('hide-content');
+    navigasi.classList.add('hide-content');
 
     // Initialize the modal
     const modal = document.getElementById('confirmationModal');

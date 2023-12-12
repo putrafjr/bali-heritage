@@ -5,12 +5,12 @@ const Admin = {
 
       return `
       <div class="sidebar">
-        <h1>Data Pendaftar</h1>
-        <hr style="border: 1px solid  #000; margin: 0;">
-        <ul>
-          <li><a href="#"><i class="fas fa-qrcode"></i>Logout</a></li>
-        </ul>
-        <hr style="border: 1px solid  #000; margin: 0;">
+      <h1>Data Pendaftar</h1>
+      <hr style="border: 1px solid  #000; margin: 0;">
+      <ul>
+        <li><a href="#"><i class="fas fa-qrcode"></i>Logout</a></li>
+      </ul>
+      <hr style="border: 1px solid  #000; margin: 0;">
       </div>
 
         <div class="content">
@@ -72,18 +72,18 @@ const Admin = {
                         </tbody>
                     </table>
             </div>
-        </div></br></br></br></br></br></br></br>
+        </div>
   `;},
 
     async afterRender() {
-        // munculkan hamburger
         // hide hamburger
         const hamburger = document.querySelector('.hamburger');
-        hamburger.classList.remove('hide-content');
-    
-        // munculkan nav
+        hamburger.classList.add('hide-content');
+
+        // hide nav
         const navigasi = document.querySelector('nav');
-        navigasi.classList.remove('hide-content');
+        navigasi.classList.add('hide-content');
+
       },
 };
 

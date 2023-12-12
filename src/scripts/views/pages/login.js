@@ -18,7 +18,7 @@ const Login = {
             <input type="password" class="form-control" id="lname" name="password" placeholder="Password">
           </div></br>
           <div class="button_box">
-            <button type="submit" name="loginsubmit" class="btn"><a href=".#/admin">LOGIN</a></button>
+            <button type="submit" name="loginsubmit" class="btnlogin"><a href=".#/admin">LOGIN</a></button>
           </div>
         </form>
       </div>
@@ -28,14 +28,13 @@ const Login = {
     },
   
     async afterRender() {
-      // munculkan hamburger
-      // hide hamburger
-      const hamburger = document.querySelector('.hamburger');
-      hamburger.classList.remove('hide-content');
-  
-      // munculkan nav
-      const navigasi = document.querySelector('nav');
-      navigasi.classList.remove('hide-content');
+        // hide hamburger
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.classList.add('hide-content');
+
+        // hide nav
+        const navigasi = document.querySelector('nav');
+        navigasi.classList.add('hide-content');
     },
   };
   
