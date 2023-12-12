@@ -17,16 +17,16 @@ const Beranda = {
     </div>
 
     <div class="Posterhome">
+    <div class="Posterhome-image"></div>
     <div class="Posterhome-text">
         <h2>Bali Heritage</h2>
-        <p>Selamat datang di Bali Heritage, sebuah platform untuk </br> memahami lebih  dalam tentang kekayaan budaya Bali. Keindahan </br> budaya Bali  yang  merangsang minat dalam menjaga dan melestarikan warisan budaya Bali. </p> 
+        <p>Selamat datang di Bali Heritage, sebuah platform untuk memahami </br> lebih  dalam tentang kekayaan budaya Bali. Keindahan budaya Bali </br>  yang  merangsang minat dalam menjaga dan melestarikan warisan budaya Bali. </p> 
         <div class="Posterhome-Button">
             <a href=".#/kesenian" class="Posterhome-Button1"> Kesenian</a>
             <a href=".#/event" class="Posterhome-Button2"> Event</a>
-            <a href=".#/login" class="Posterhome-Button2"> Login Admin</a>
+            <!-- <a href=".#/login" class="Posterhome-Button2"> Login Admin</a> -->
         </div>   
     </div>
-    <div class="Posterhome-image"></div>
     </div>
 
 <hr style="border: 3px solid black; margin: 0;">

@@ -77,12 +77,12 @@ const tentangKami = {
           <div class="task">( S284YB434 )</div>
 
           <div class="sosial-media">
-              <a href="#"><img src="" ></a>
-              <a href="#"><img src="" ></a>
-              <a href="#"><img src="" ></a>
+              <a href="https://www.linkedin.com/in/rayhanvito/"><img src="" ></a>
+              <a href="https://www.instagram.com/rayhan.vito/"><img src="" ></a>
+              <a href="https://github.com/rayhanvito42"><img src="" ></a>
           </div>
       </div>
-  </div>
+    </div>
         `;
     },
   

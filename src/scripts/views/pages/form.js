@@ -3,7 +3,7 @@ const formpendaftran = {
     const main = document.querySelector('main');
     main.classList.remove('reset-padding');
 
-    return `<div class="daftar1">
+    return `<div class="daftar">
       <form class="daftar" onsubmit="showConfirmationModal(event)">
         <h1 class="form">Form Pendaftaran Event</h1>
         <label for="nama">Nama Lengkap:</label>
@@ -28,7 +28,7 @@ const formpendaftran = {
           <label for="kesediaan">Saya bersedia hadir dalam event</label>
         </div>
         
-        <div class="Posterhome-Button">
+        <div class="Pendaftaran-Button">
           <a href=".#/event" class="Pendaftaran-Button1"> Back</a>
           <button type="submit" class="Pendaftaran-Button2"> Daftar</button>
         </div>   
@@ -50,18 +50,28 @@ const formpendaftran = {
           </div>
         </div>
       </div>
+
+      <!-- Success Modal Structure -->
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <h2>Pemesanan Tiket Berhasil!</h2>
+          <span>Terima kasih atas pendaftarannya.</span>
+          <div class="Posterhome-Button">
+            <button onclick="closeSuccessModal()" class="btn1">OK</button>
+          </div>
+        </div>
+      </div>
     `;
   },
 
   async afterRender() {
-    // munculkan hamburger
     // hide hamburger
     const hamburger = document.querySelector('.hamburger');
-    hamburger.classList.remove('hide-content');
+    hamburger.classList.add('hide-content');
 
-    // munculkan nav
+    // hide nav
     const navigasi = document.querySelector('nav');
-    navigasi.classList.remove('hide-content');
+    navigasi.classList.add('hide-content');
 
     // Initialize the modal
     const modal = document.getElementById('confirmationModal');
@@ -69,8 +79,7 @@ const formpendaftran = {
     const confirmEmail = document.getElementById('confirmEmail');
     const confirmNoTelepon = document.getElementById('confirmNoTelepon');
     const confirmEvent = document.getElementById('confirmEvent');
-    const confirmTanggalLokasi = document.getElementById('confirmTanggalLokasi');
-
+    
     window.showConfirmationModal = function (event) {
       event.preventDefault();
       modal.style.display = 'block';
@@ -84,17 +93,55 @@ const formpendaftran = {
       // confirmTanggalLokasi.textContent = document.getElementById('tanggal_lokasi').value;
     };
 
-    window.confirmRegistration = function () {
+    window.confirmRegistration = async function () {
       // Handle confirmation logic (e.g., send data to the server)
       // You can add an AJAX request here if needed
 
       // Close the modal after confirmation
-      modal.style.display = 'none';
+      // Get the form data
+      const formData = {
+        name: document.getElementById('nama').value,
+        email: document.getElementById('email').value,
+        phone_number: document.getElementById('no_telepon').value,
+        event: document.getElementById('event').value,
+        // Add other form fields as needed
+      };
+      try {
+        // Make a POST request to your API endpoint
+        const response = await fetch('http://localhost:3000/event/store', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+    
+        if (response.ok) {
+          // Handle successful response, e.g., show a success message
+          console.log('Registration successful');
+        } else {
+          // Handle error response, e.g., show an error message
+          console.error('Registration failed');
+        }
+      } catch (error) {
+        console.error('Error:', error.message);
+      } finally {
+        // Close the modal and show success modal regardless of the API response
+        modal.style.display = 'none';
+        document.getElementById('successModal').style.display = 'block';
+      }
     };
 
     window.cancelConfirmation = function () {
       // Close the modal on cancel
       modal.style.display = 'none';
+    };
+
+    window.closeSuccessModal = function () {
+      // Close the success modal
+      document.getElementById('successModal').style.display = 'none';
+      // Optionally, you can redirect to the event page after closing the modal
+      window.location.href = '.#/event';
     };
   },
 };

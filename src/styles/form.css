@@ -1,14 +1,3 @@
-
-.container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: whitesmoke;
-    border-radius: 15px;
-}
-
 h1.form {
     text-align: center;
     margin-bottom: 20px;
@@ -17,14 +6,15 @@ h1.form {
 .daftar {
     display: flex;
     flex-direction: column;
-    padding: 100px 300px 100px 300px;
+    justify-content: center;
+    margin: 20px 150px 40px 150px;
 }
 
 label {
     margin-bottom: 5px;
 }
 
-input[type="text"], input[type="email"], select {
+input[type="text"], input[type="email"], input[type="password"], select {
     padding: 8px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -32,43 +22,46 @@ input[type="text"], input[type="email"], select {
     background-color: white;
 }
 
-.checkbox {
-    margin: 0 190px 20px 0;
-    float: left;
-}
-
 .checkbox input[type="checkbox"]{
     margin: 5px;
 }
 
+.Pendaftaran-Button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+}
+
 .Pendaftaran-Button1 {
-    border-radius: 500px;
-    border: 3px #5D5A88 solid;
-    background: #FBD8A8;
-    color: #000000;
-    display: inline-flex;
+    border-radius: 400px;
+    border: 3px #212124 solid;
+    background: #c94a34;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bolder;
     padding: 15px;
-    justify-content: center;
-    width: 65px;
+    width: 50px;
     text-decoration: none;
 }
 
+.Pendaftaran-Button1:hover {
+    color: #d3d92b;
+}
+
 .Pendaftaran-Button2 {
-    border-radius: 500px;
-    border: 3px solid #5D5A88;
+    border-radius: 600px;
+    border: 3px solid #212124;
     background: #FBD8A8;
     color: #000000;
-    display: inline-flex;
     font-size: 20px;
     font-weight: bolder;
     padding: 15px;
-    justify-content: center;
     width: 95px;
-    margin: auto auto;
     text-decoration: none;
-    margin-left: 410px;
+  }
+
+.Pendaftaran-Button2:hover {
+    color: #932f1b;
 }
 
 .modal {
@@ -79,10 +72,12 @@ input[type="text"], input[type="email"], select {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
   }
   
 .modal-content {
-    margin: 10% auto;
+    margin: 6% auto;
     padding: 20px;
     border: 2px solid #000;
     border-radius: 10px;
@@ -104,12 +99,209 @@ input[type="text"], input[type="email"], select {
     border: 2px solid #000;
     font-size: 18px;
     font-weight: bolder;
+    color: #000;
 }
 
 .Posterhome-Button .btn2 {
     border: 2px solid #00000000;
     font-size: 18px;
 }
-  
-  /* Add additional styles as needed */
+
+.text1 {
+    text-align: center;
+}
+
+
+/* responsive */
+/* responsive Tablet */
+@media (max-width: 900px) {
+    h1.form {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .daftar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px 45px 208px 45px;
+    }
+    
+    label {
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"], input[type="email"], select {
+        padding: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        background-color: white;
+    }
+    
+    .checkbox {
+        margin: 0 1900px 20px 0;
+        float: left;
+    }
+    
+    .checkbox [type="checkbox"]{
+        margin: 5px;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+      
+    .modal-content {
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        max-width: 55%; /* Adjust the maximum width as needed */
+        width: 100%;   /* Add this line to make sure it takes full width on smaller screens */
+        text-align: center;
+    }
+    
+    .modal-content > p {
+        margin: 4% auto;
+        text-align: justify;
+    }
+    
+    .Posterhome-Button .btn1 {
+        margin: 20px 0px 12px 0px;
+        padding: 8px 60px 8px 60px;
+        background-color: #A8FBC9;
+        border-radius: 25px;
+        border: 2px solid #000;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    .Posterhome-Button .btn2 {
+        border: 2px solid #00000000;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 430px) {
+    h1.form {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .daftar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 8px 88px 8px;
+    }
+    
+    label {
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"], input[type="email"], select {
+        padding: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        background-color: white;
+    }
+    
+    .checkbox {
+        margin: 0 0px 20px 0;
+        float: left;
+    }
+    
+    .checkbox input[type="checkbox"]{
+        margin: 5px;
+    }
+    
+    .Pendaftaran-Button {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+    }
+    
+    .Pendaftaran-Button1 {
+        border-radius: 400px;
+        border: 3px #212124 solid;
+        background: #c94a34;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 15px;
+        width: 50px;
+        text-decoration: none;
+    }
+    
+    .Pendaftaran-Button2 {
+        border-radius: 600px;
+        border: 3px solid #212124;
+        background: #FBD8A8;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 15px;
+        width: 95px;
+        text-decoration: none;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+      
+    .modal-content {
+        margin: 20% auto;
+        padding: 8px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        max-width: 87%; /* Adjust the maximum width as needed */
+        width: 100%;   /* Add this line to make sure it takes full width on smaller screens */
+    }
+    
+    .modal-content > p {
+        margin: 4% auto;
+        font-size: 20px;
+    }
+    
+    .Posterhome-Button .btn1 {
+        margin: 20px 0px 12px 0px;
+        padding: 8px 30px 8px 30px;
+        background-color: #A8FBC9;
+        border-radius: 25px;
+        border: 2px solid #000;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    .Posterhome-Button .btn2 {
+        margin: 20px 0px 12px 30px;
+        padding: 8px 30px 8px 30px;
+        background-color: #cb3838;
+        border-radius: 25px;
+        border: 2px solid #000;
+        font-size: 18px;
+        font-weight: bolder;
+        color: #ffffff;
+    }
+}
+
   
