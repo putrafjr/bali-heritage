@@ -1,9 +1,9 @@
 const Kesenian = {
-    async render() {
-      const main = document.querySelector('main');
-      main.classList.remove('reset-padding');
-  
-      return `
+  async render() {
+    const main = document.querySelector('main');
+    main.classList.remove('reset-padding');
+
+    return `
         <div class="kesenian">
             <div class="kesenianright-side"></br>
                 <h1>Tari Kecak</h1>
@@ -51,19 +51,18 @@ const Kesenian = {
             </div>
         </div>
         `;
-    },
-  
-    async afterRender() {
-      // munculkan hamburger
-      // hide hamburger
-      const hamburger = document.querySelector('.hamburger');
-      hamburger.classList.remove('hide-content');
-  
-      // munculkan nav
-      const navigasi = document.querySelector('nav');
-      navigasi.classList.remove('hide-content');
-    },
-  };
-  
-  export default Kesenian;
-  
+  },
+
+  async afterRender() {
+    // munculkan hamburger
+    // hide hamburger
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.classList.remove('hide-content');
+
+    // munculkan nav
+    const navigasi = document.querySelector('nav');
+    navigasi.classList.remove('hide-content');
+  },
+};
+
+export default Kesenian;

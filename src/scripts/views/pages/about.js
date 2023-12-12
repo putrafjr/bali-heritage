@@ -1,7 +1,6 @@
 const tentangKami = {
-    async render() {
-        
-      return  `
+  async render() {
+    return `
     <div class="about">
         <div class="left-side">
             <img src="./Image/Bali Heritage.png" alt="">
@@ -9,7 +8,7 @@ const tentangKami = {
         <div class="right-side">
             <h1 class="abouts">Tujuan Website</h1>
             <p class="desc">Website ini bertujuan untuk menciptakan platform informasi yang akan menyediakan pengetahuan yang
-                menarik dan mudah diakses mengenai budaya Bali. Dengan cara ini, kami berharap untuk membangkitkan
+                menarik dan mudah diakses mengenai kesenian Bali. Dengan cara ini, kami berharap untuk membangkitkan
                 minat generasi muda dalam memahami, menghargai, dan mengambil bagian dalam menjaga keberlanjutan
                 budaya Bali.
             </p>
@@ -84,19 +83,18 @@ const tentangKami = {
       </div>
     </div>
         `;
-    },
-  
-    async afterRender() {
-      // munculkan hamburger
-      // hide hamburger
-      const hamburger = document.querySelector('.hamburger');
-      hamburger.classList.remove('hide-content');
-  
-      // munculkan nav
-      const navigasi = document.querySelector('nav');
-      navigasi.classList.remove('hide-content');
-    },
-  };
-  
+  },
+
+  async afterRender() {
+    // munculkan hamburger
+    // hide hamburger
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.classList.remove('hide-content');
+
+    // munculkan nav
+    const navigasi = document.querySelector('nav');
+    navigasi.classList.remove('hide-content');
+  },
+};
+
 export default tentangKami;
-  

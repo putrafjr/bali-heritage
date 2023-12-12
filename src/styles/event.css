@@ -14,8 +14,9 @@
 }
 
 .d-flex.align-items-center > img {
-    width: 479px; 
+    width: 420px; 
     height: 364px;
+    border-radius: 25px;
 }
 
 hr {

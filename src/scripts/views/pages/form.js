@@ -17,10 +17,10 @@ const formpendaftran = {
         
         <label for="event">Event Budaya Bali yang diikuti:</label>
         <select id="event" name="event">
-          <option value="event1">Event 1</option>
-          <option value="event2">Event 2</option>
-          <option value="event3">Event 3</option>
-          <option value="event4">Event 4</option>
+          <option value="Festival Sanur Village">Festival Sanur Village</option>
+          <option value="Pesta Kesenian Bali">Pesta Kesenian Bali</option>
+          <option value="Bali International Film Festival">Bali International Film Festival</option>
+          <option value="Tari Kecak">Tari Kecak</option>
         </select>
         
         <div class="checkbox">
@@ -79,7 +79,7 @@ const formpendaftran = {
     const confirmEmail = document.getElementById('confirmEmail');
     const confirmNoTelepon = document.getElementById('confirmNoTelepon');
     const confirmEvent = document.getElementById('confirmEvent');
-    
+
     window.showConfirmationModal = function (event) {
       event.preventDefault();
       modal.style.display = 'block';
@@ -115,7 +115,7 @@ const formpendaftran = {
           },
           body: JSON.stringify(formData),
         });
-    
+
         if (response.ok) {
           // Handle successful response, e.g., show a success message
           console.log('Registration successful');
@@ -137,6 +137,7 @@ const formpendaftran = {
       modal.style.display = 'none';
     };
 
+    // eslint-disable-next-line func-names
     window.closeSuccessModal = function () {
       // Close the success modal
       document.getElementById('successModal').style.display = 'none';

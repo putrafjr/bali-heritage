@@ -1,9 +1,9 @@
 const Admin = {
-    async render(){
-        const main = document.querySelector('main');
-        main.classList.remove('reset-padding');
+  async render() {
+    const main = document.querySelector('main');
+    main.classList.remove('reset-padding');
 
-      return `
+    return `
     <div class="sidebar-content">
       <div class="left-sidebar">
         <div class="sidebar">
@@ -35,38 +35,40 @@ const Admin = {
           </table>
         </div>
      </div>
-  `;},
+  `;
+  },
 
   async afterRender() {
     const tableBody = document.querySelector('table tbody');
-    window.deleteEntry = async function(id) {
-        try {
-            const response = await fetch(`http://localhost:3000/event/${id}`, {
-                method: 'DELETE'
-            })
+    // eslint-disable-next-line func-names
+    window.deleteEntry = async function (id) {
+      try {
+        const response = await fetch(`http://localhost:3000/event/${id}`, {
+          method: 'DELETE',
+        });
 
-            if(response.ok){
-                window.location.reload()
-            }
-        } catch (error) {
-            console.error(error)
+        if (response.ok) {
+          window.location.reload();
         }
-    }
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
     try {
-        // Make a GET request to your API endpoint
-        const response = await fetch('http://localhost:3000/event');
-        const responseData = await response.json();
+      // Make a GET request to your API endpoint
+      const response = await fetch('http://localhost:3000/event');
+      const responseData = await response.json();
 
-        if (responseData.success === 'true') {
-            // Initialize a counter for numbering the entries
-            let counter = 1;
+      if (responseData.success === 'true') {
+        // Initialize a counter for numbering the entries
+        let counter = 1;
 
-            // Loop through the data array and populate the table
-            responseData.data.forEach(entry => {
-                const row = document.createElement('tr');
+        // Loop through the data array and populate the table
+        responseData.data.forEach((entry) => {
+          const row = document.createElement('tr');
 
-                row.innerHTML = `
+          row.innerHTML = `
                     <td>${counter}</td>
                     <td>${entry.name}</td>
                     <td>${entry.phone_number}</td>
@@ -76,16 +78,17 @@ const Admin = {
                         <button id="delete" onclick="deleteEntry('${entry._id}')">Delete</button>
                     </td>
                 `;
-                tableBody.appendChild(row);
+          tableBody.appendChild(row);
 
-                // Increment the counter
-                counter++;
-            });
-        } else {
-            console.error('Failed to fetch data:', responseData.message);
-        }
+          // Increment the counter
+          counter++;
+        });
+      } else {
+        console.error('Failed to fetch data:', responseData.message);
+      }
     } catch (error) {
-        console.error('Error:', error.message);
+      // eslint-disable-next-line no-console
+      console.error('Error:', error.message);
     }
 
     // hide hamburger
@@ -95,7 +98,6 @@ const Admin = {
     // hide nav
     const navigasi = document.querySelector('nav');
     navigasi.classList.add('hide-content');
-    
   },
 };
 

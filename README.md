@@ -1,15 +1,13 @@
 # About Bali Heritage
-
+Website ini bertujuan untuk mengenalkan dan melestarikan budaya bali dengan menggunakan website informatif kepada masyarakat di Indonesia terutama untuk anak muda. Kami membuat website ini berisi sekumpulan informasi mengenai budaya yang ada di bali berupa Kesenian dan agenda acara yang akan diselenggarakan.
 
 # Demo
 
-Silahkan Kunjungi website kami :
+Halaman Admin 
 
-Halaman Admin : 
+Username : admin
 
-Username : 
-
-Password : 
+Password : admin123
 
 # Team
 
@@ -24,5 +22,3 @@ Anggota Kelompok :
 - (S284YB434) – (Rayhan Vito Gustiansyah)
 
 # Screenshots
-
-## Beranda

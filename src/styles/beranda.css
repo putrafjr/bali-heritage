@@ -135,8 +135,8 @@ header nav ul li a:focus {
 .Posterhome {
     padding: 60px 30px 60px 30px;
     display: flex;
-    justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
-    align-items: flex-start; /* Menggeser konten ke bagian atas */
+    justify-content: center; 
+    align-items: flex-start; 
     gap: 20px;
 }
 
@@ -189,7 +189,6 @@ header nav ul li a:focus {
     margin: 28px;
     text-decoration: none;
 }
-/*-----------------------------------------------------*/
 
 /* contenthome */
 .contenthome {
@@ -246,8 +245,6 @@ header nav ul li a:focus {
     font-size:30px;
 }
 
-/*-----------------------------------------------------*/
-
 /* Video */
 .video-container {
   text-align: center;
@@ -264,7 +261,6 @@ header nav ul li a:focus {
 }
 
 /* footer */
-
 footer {
     display: flex;
     justify-content: center;
@@ -275,7 +271,6 @@ footer {
     font-size: 14px;
     padding: 20px 0px;
 }
-
 
 footer .logo-wrap {
     display: flex;
@@ -332,8 +327,8 @@ footer .note{
     .Posterhome {
         padding: 60px 22px 60px 22px;
         display: flex;
-        justify-content: center; /* Tetap menjaga konten terpusat secara horizontal */
-        align-items: flex-start; /* Menggeser konten ke bagian atas */
+        justify-content: center; 
+        align-items: flex-start; 
         gap: 27px;
     }
     
@@ -397,6 +392,7 @@ footer .note{
     header {
         padding: 20px 20px 20px 20px;
         flex-direction: row; 
+        background-color: #FBD8A8;
     }
 
     header :nth-child(2){
@@ -405,12 +401,18 @@ footer .note{
 
     .hamburger {
         display: inline-block;
+        background-color: #FBD8A8;
     }
 
     header .hamburger button {
         border: none;
-        font-size: 24px;
-        /* font-weight: bold; */
+        font-size: 26px;
+        color: #000;
+        font-weight: bold; 
+    }
+
+    header .hamburger button:hover {
+        color: #e8dddd;
     }
 
     header .logo-wrap {

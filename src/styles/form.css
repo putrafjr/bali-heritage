@@ -29,7 +29,7 @@ input[type="text"], input[type="email"], input[type="password"], select {
 .Pendaftaran-Button {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+    width: 100%; 
 }
 
 .Pendaftaran-Button1 {
@@ -81,8 +81,8 @@ input[type="text"], input[type="email"], input[type="password"], select {
     padding: 20px;
     border: 2px solid #000;
     border-radius: 10px;
-    max-width: 28%; /* Adjust the maximum width as needed */
-    width: 100%;   /* Add this line to make sure it takes full width on smaller screens */
+    max-width: 28%; 
+    width: 100%;   
     text-align: center;
 }
 
@@ -165,8 +165,8 @@ input[type="text"], input[type="email"], input[type="password"], select {
         padding: 20px;
         border: 2px solid #000;
         border-radius: 10px;
-        max-width: 55%; /* Adjust the maximum width as needed */
-        width: 100%;   /* Add this line to make sure it takes full width on smaller screens */
+        max-width: 55%; 
+        width: 100%;   
         text-align: center;
     }
     
@@ -229,7 +229,7 @@ input[type="text"], input[type="email"], input[type="password"], select {
     .Pendaftaran-Button {
         display: flex;
         justify-content: space-between;
-        width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+        width: 100%; 
     }
     
     .Pendaftaran-Button1 {
@@ -273,8 +273,8 @@ input[type="text"], input[type="email"], input[type="password"], select {
         padding: 8px;
         border: 2px solid #000;
         border-radius: 10px;
-        max-width: 87%; /* Adjust the maximum width as needed */
-        width: 100%;   /* Add this line to make sure it takes full width on smaller screens */
+        max-width: 87%; 
+        width: 100%;   
     }
     
     .modal-content > p {
