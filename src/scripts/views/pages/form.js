@@ -108,7 +108,7 @@ const formpendaftran = {
       };
       try {
         // Make a POST request to your API endpoint
-        const response = await fetch('http://localhost:3000/event/store', {
+        const response = await fetch('https://bali-heritage-api-production-34ef.up.railway.app/event/store', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

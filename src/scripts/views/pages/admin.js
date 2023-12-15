@@ -43,7 +43,7 @@ const Admin = {
     // eslint-disable-next-line func-names
     window.deleteEntry = async function (id) {
       try {
-        const response = await fetch(`http://localhost:3000/event/${id}`, {
+        const response = await fetch(`https://bali-heritage-api-production-34ef.up.railway.app/event/${id}`, {
           method: 'DELETE',
         });
 
@@ -57,7 +57,7 @@ const Admin = {
 
     try {
       // Make a GET request to your API endpoint
-      const response = await fetch('http://localhost:3000/event');
+      const response = await fetch('https://bali-heritage-api-production-34ef.up.railway.app/event');
       const responseData = await response.json();
 
       if (responseData.success === 'true') {
