@@ -1,8 +1,10 @@
 import 'regenerator-runtime';
 import '../styles/beranda.css';
 import '../styles/kesenian.css';
-// import '../styles/event.css';
-// import '../styles/tentangKami.css';
+import '../styles/form.css';
+import '../styles/event.css';
+import '../styles/about.css';
+import '../styles/login.css';
 import App from './views/app';
 
 const app = new App({
@@ -13,7 +15,7 @@ const app = new App({
 
 window.addEventListener('hashchange', () => {
   const urlSkip = window.location.hash;
-  if (urlSkip === '#container-form-sell' || urlSkip === '#container-form-exchange') {
+  if (urlSkip === '#' || urlSkip === '#') {
     return;
   }
   window.scrollTo(0, 0);

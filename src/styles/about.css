@@ -1,0 +1,154 @@
+
+
+
+/* about */
+
+.about{
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 18px 37px;
+    margin: 0;
+    display: inline-flex;
+}
+
+.left-side{
+    flex-basis: 50%;
+}
+
+.left-side img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px 50px 50px 50px ;
+
+}
+
+.right-side{
+    flex-basis: 50%;
+}
+
+.right-side h1{
+    font-weight: bold;
+    text-align: center;
+    color: #887557;
+    font-size: 38px;
+}
+
+.right-side p {
+    padding: 20px 34px 0px 38px;
+    font-size: 23px;
+    text-align: justify;
+    color: #887557;
+}
+
+
+/* team */
+
+.card{
+    text-align: center;
+}
+
+.header{
+    padding: 30px;
+    color: black;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.header h1{
+    color: #887557;
+}
+
+.sub-header{
+    max-width: 100%;
+    padding: 0px 0px 50px 0px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams {
+    padding: 10px 57px 40px 57px;
+    max-width: 32%;
+    max-height: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+
+
+.image {
+    color: #1F6E8C;
+    width: 260px;
+    height: 240px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.teams:nth-child(1) .image {
+    background-image: url("../public/team/dikri.jpeg");
+} 
+
+.teams:nth-child(2) .image {
+    background-image: url("../public/team/demario.jpeg");
+} 
+
+.teams:nth-child(3) .image {
+    background-image: url("../public/team/fajar.jpeg");
+}
+
+.teams:nth-child(4) .image {
+    background-image: url("../public/team/elisabeth.jpeg");
+}
+
+.teams:nth-child(5) .image {
+    background-image: url("../public/team/rayhan.jpeg");
+}
+
+.nama {
+    color: #1F6E8C;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.task{
+    font-style: italic;
+    color: #1F6E8C;
+}
+
+.sosial-media{
+    margin: 14px;
+}
+
+.sosial-media a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sosial-media a:nth-child(1){
+    background-image: url("../public/icons/linkedin.png");
+}
+
+.sosial-media a:nth-child(2){
+    background-image: url("../public/icons/instagram.png");
+}
+
+.sosial-media a:nth-child(3){
+    background-image: url("../public/icons/github.png");
+}
+
+.sosial-media a i{
+    color: #e0b672;
+}
+
+.sosial-media a img:hover{
+    background-color: #c28b32;
+}
+
